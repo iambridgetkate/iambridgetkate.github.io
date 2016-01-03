@@ -1,1 +1,24 @@
-<h1>Hello Github</h1>
+---
+layout: default
+---
+<div id="home-content-page">
+	<!-- Intial Quote at top of page -->
+	<div id="quote">
+		<blockquote><h3>Done is better than perfect.</h3></blockquote>
+	</div>
+	<div id="likes-dislikes">
+		<!-- Generic Likes & Dislikes -->
+		<p><em>Likes:</em>Christmas, Kittens, Twitter, Performance Puzzles & Coffee</p>
+		<p><em>Dislikes:</em>Lateness & Unnessecary Conflict</p>
+	</div>
+
+	<div id="latest-post">
+		<!-- Shows title & excerpt of post with most recent date -->
+		<h3>Latest Musing</h3>
+		{% for post in site.posts limit:1 %}
+		
+		<a href="{{ post.url }}">{{ post.title }} - {{ post.date | date_to_string }} </a>
+		{{ post.excerpt }}
+		{% endfor %}
+	</div>
+</div>
