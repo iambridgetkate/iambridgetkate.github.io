@@ -2,29 +2,24 @@
  * Site header
  */
  .site-header {
- 	font-family: 'Amatic SC', cursive;
- 	min-height: 200px;
- 	// Positioning context for the mobile navigation icon
- 	position: relative;
+   font-family: 'Slabo 27px', serif;
+   min-height: 200px;
+   // Positioning context for the mobile navigation icon
+   position: relative;
 
  }
 
  .site-header h2 {
-	font-size: 24;  
+	font-size: 24;
 	line-height: 40px;
 	font-weight: 300;
- 	letter-spacing: 2px; 
-}
-
-.site-header img{
-	padding:30px 30px 30px 30px;
-	float:left;
+ 	letter-spacing: 2px;
 }
 
  .site-title {
  	font-size: 26px;
  	font-weight: 300;
- 	line-height: 56px;
+ 	// line-height: 56px;
  	letter-spacing: 2px;
  	margin-bottom: 0;
 
@@ -33,11 +28,15 @@
  	&:visited {
  		color: $grey-color-dark;
  	}
+
+  &:hover {
+      color: $text-color;
+      text-decoration: none;
+  }
  }
 
 .site-title h1 {
-	padding-top:80px;
-	margin-bottom: 0;	
+	margin-bottom: 0;
 }
 
  .site-nav {
